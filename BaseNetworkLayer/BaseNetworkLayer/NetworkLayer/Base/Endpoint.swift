@@ -7,14 +7,6 @@
 
 import Foundation
 
-enum RequestMethod: String {
-  case delete = "DELETE"
-  case get = "GET"
-  case patch = "PATCH"
-  case post = "POST"
-  case put = "PUT"
-}
-
 protocol Endpoint {
   var scheme: String { get }
   var host: String { get }
