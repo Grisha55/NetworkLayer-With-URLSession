@@ -12,6 +12,7 @@
 		BED51AFC28C7C3A1003973B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED51AFB28C7C3A1003973B6 /* ViewController.swift */; };
 		BED51B0128C7C3A2003973B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED51B0028C7C3A2003973B6 /* Assets.xcassets */; };
 		BED51B0428C7C3A2003973B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED51B0228C7C3A2003973B6 /* LaunchScreen.storyboard */; };
+		BED51B0E28C7C553003973B6 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED51B0D28C7C553003973B6 /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BED51B0028C7C3A2003973B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BED51B0328C7C3A2003973B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BED51B0528C7C3A2003973B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED51B0D28C7C553003973B6 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		BED51AF628C7C3A1003973B6 /* BaseNetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				BED51B0B28C7C539003973B6 /* NetworkLayer */,
 				BED51AF728C7C3A1003973B6 /* AppDelegate.swift */,
 				BED51AF928C7C3A1003973B6 /* SceneDelegate.swift */,
 				BED51AFB28C7C3A1003973B6 /* ViewController.swift */,
@@ -62,6 +65,22 @@
 				BED51B0528C7C3A2003973B6 /* Info.plist */,
 			);
 			path = BaseNetworkLayer;
+			sourceTree = "<group>";
+		};
+		BED51B0B28C7C539003973B6 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				BED51B0C28C7C544003973B6 /* Base */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		BED51B0C28C7C544003973B6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BED51B0D28C7C553003973B6 /* Endpoint.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +155,7 @@
 			files = (
 				BED51AFC28C7C3A1003973B6 /* ViewController.swift in Sources */,
 				BED51AF828C7C3A1003973B6 /* AppDelegate.swift in Sources */,
+				BED51B0E28C7C553003973B6 /* Endpoint.swift in Sources */,
 				BED51AFA28C7C3A1003973B6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
