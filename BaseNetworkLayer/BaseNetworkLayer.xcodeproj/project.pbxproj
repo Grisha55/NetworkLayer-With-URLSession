@@ -19,7 +19,19 @@
 		BED51B1728C7CDBD003973B6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED51B1628C7CDBD003973B6 /* HTTPMethod.swift */; };
 		BED51B1A28C7CEB9003973B6 /* PostsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED51B1928C7CEB9003973B6 /* PostsEndpoint.swift */; };
 		BED51B1D28C7D239003973B6 /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED51B1C28C7D239003973B6 /* PostsService.swift */; };
+		BED51B2528C7DCCE003973B6 /* BaseNetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED51B2428C7DCCE003973B6 /* BaseNetworkLayerTests.swift */; };
+		BED51B2C28C7DCF2003973B6 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED51B2B28C7DCF2003973B6 /* Mockable.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BED51B2628C7DCCE003973B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BED51AEC28C7C3A1003973B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED51AF328C7C3A1003973B6;
+			remoteInfo = BaseNetworkLayer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BED51AF428C7C3A1003973B6 /* BaseNetworkLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseNetworkLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,10 +48,21 @@
 		BED51B1628C7CDBD003973B6 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		BED51B1928C7CEB9003973B6 /* PostsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsEndpoint.swift; sourceTree = "<group>"; };
 		BED51B1C28C7D239003973B6 /* PostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
+		BED51B2228C7DCCE003973B6 /* BaseNetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseNetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED51B2428C7DCCE003973B6 /* BaseNetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkLayerTests.swift; sourceTree = "<group>"; };
+		BED51B2B28C7DCF2003973B6 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
+		BED51B2E28C7DFAE003973B6 /* get_post.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = get_post.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BED51AF128C7C3A1003973B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED51B1F28C7DCCE003973B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				BED51AF628C7C3A1003973B6 /* BaseNetworkLayer */,
+				BED51B2328C7DCCE003973B6 /* BaseNetworkLayerTests */,
+				BED51B2D28C7DF12003973B6 /* JSON */,
 				BED51AF528C7C3A1003973B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				BED51AF428C7C3A1003973B6 /* BaseNetworkLayer.app */,
+				BED51B2228C7DCCE003973B6 /* BaseNetworkLayerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +151,23 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		BED51B2328C7DCCE003973B6 /* BaseNetworkLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BED51B2428C7DCCE003973B6 /* BaseNetworkLayerTests.swift */,
+				BED51B2B28C7DCF2003973B6 /* Mockable.swift */,
+			);
+			path = BaseNetworkLayerTests;
+			sourceTree = "<group>";
+		};
+		BED51B2D28C7DF12003973B6 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				BED51B2E28C7DFAE003973B6 /* get_post.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +188,24 @@
 			productReference = BED51AF428C7C3A1003973B6 /* BaseNetworkLayer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BED51B2128C7DCCE003973B6 /* BaseNetworkLayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED51B2A28C7DCCE003973B6 /* Build configuration list for PBXNativeTarget "BaseNetworkLayerTests" */;
+			buildPhases = (
+				BED51B1E28C7DCCE003973B6 /* Sources */,
+				BED51B1F28C7DCCE003973B6 /* Frameworks */,
+				BED51B2028C7DCCE003973B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BED51B2728C7DCCE003973B6 /* PBXTargetDependency */,
+			);
+			name = BaseNetworkLayerTests;
+			productName = BaseNetworkLayerTests;
+			productReference = BED51B2228C7DCCE003973B6 /* BaseNetworkLayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -157,6 +218,10 @@
 				TargetAttributes = {
 					BED51AF328C7C3A1003973B6 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					BED51B2128C7DCCE003973B6 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BED51AF328C7C3A1003973B6;
 					};
 				};
 			};
@@ -174,6 +239,7 @@
 			projectRoot = "";
 			targets = (
 				BED51AF328C7C3A1003973B6 /* BaseNetworkLayer */,
+				BED51B2128C7DCCE003973B6 /* BaseNetworkLayerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +251,13 @@
 			files = (
 				BED51B0428C7C3A2003973B6 /* LaunchScreen.storyboard in Resources */,
 				BED51B0128C7C3A2003973B6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED51B2028C7DCCE003973B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +281,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BED51B1E28C7DCCE003973B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED51B2528C7DCCE003973B6 /* BaseNetworkLayerTests.swift in Sources */,
+				BED51B2C28C7DCF2003973B6 /* Mockable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BED51B2728C7DCCE003973B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BED51AF328C7C3A1003973B6 /* BaseNetworkLayer */;
+			targetProxy = BED51B2628C7DCCE003973B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BED51B0228C7C3A2003973B6 /* LaunchScreen.storyboard */ = {
@@ -390,6 +480,42 @@
 			};
 			name = Release;
 		};
+		BED51B2828C7DCCE003973B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5W6DUL8QB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Vinyar-project.BaseNetworkLayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaseNetworkLayer.app/BaseNetworkLayer";
+			};
+			name = Debug;
+		};
+		BED51B2928C7DCCE003973B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5W6DUL8QB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Vinyar-project.BaseNetworkLayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaseNetworkLayer.app/BaseNetworkLayer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -407,6 +533,15 @@
 			buildConfigurations = (
 				BED51B0928C7C3A2003973B6 /* Debug */,
 				BED51B0A28C7C3A2003973B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED51B2A28C7DCCE003973B6 /* Build configuration list for PBXNativeTarget "BaseNetworkLayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED51B2828C7DCCE003973B6 /* Debug */,
+				BED51B2928C7DCCE003973B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
