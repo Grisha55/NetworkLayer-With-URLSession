@@ -18,6 +18,7 @@
 		BED51B1528C7CAEB003973B6 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED51B1428C7CAEB003973B6 /* HTTPClient.swift */; };
 		BED51B1728C7CDBD003973B6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED51B1628C7CDBD003973B6 /* HTTPMethod.swift */; };
 		BED51B1A28C7CEB9003973B6 /* PostsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED51B1928C7CEB9003973B6 /* PostsEndpoint.swift */; };
+		BED51B1D28C7D239003973B6 /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED51B1C28C7D239003973B6 /* PostsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		BED51B1428C7CAEB003973B6 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		BED51B1628C7CDBD003973B6 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		BED51B1928C7CEB9003973B6 /* PostsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsEndpoint.swift; sourceTree = "<group>"; };
+		BED51B1C28C7D239003973B6 /* PostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				BED51B0C28C7C544003973B6 /* Base */,
 				BED51B1828C7CE96003973B6 /* PostsEndpoint */,
+				BED51B1B28C7D223003973B6 /* Services */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -112,6 +115,14 @@
 				BED51B1928C7CEB9003973B6 /* PostsEndpoint.swift */,
 			);
 			path = PostsEndpoint;
+			sourceTree = "<group>";
+		};
+		BED51B1B28C7D223003973B6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BED51B1C28C7D239003973B6 /* PostsService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				BED51AF828C7C3A1003973B6 /* AppDelegate.swift in Sources */,
 				BED51B1528C7CAEB003973B6 /* HTTPClient.swift in Sources */,
 				BED51B1728C7CDBD003973B6 /* HTTPMethod.swift in Sources */,
+				BED51B1D28C7D239003973B6 /* PostsService.swift in Sources */,
 				BED51B1328C7C9C3003973B6 /* Post.swift in Sources */,
 				BED51B0E28C7C553003973B6 /* Endpoint.swift in Sources */,
 				BED51AFA28C7C3A1003973B6 /* SceneDelegate.swift in Sources */,
