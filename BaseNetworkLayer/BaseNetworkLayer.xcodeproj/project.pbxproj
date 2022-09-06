@@ -14,6 +14,7 @@
 		BED51B0428C7C3A2003973B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED51B0228C7C3A2003973B6 /* LaunchScreen.storyboard */; };
 		BED51B0E28C7C553003973B6 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED51B0D28C7C553003973B6 /* Endpoint.swift */; };
 		BED51B1028C7C826003973B6 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED51B0F28C7C826003973B6 /* RequestError.swift */; };
+		BED51B1328C7C9C3003973B6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED51B1228C7C9C3003973B6 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BED51B0528C7C3A2003973B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BED51B0D28C7C553003973B6 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		BED51B0F28C7C826003973B6 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		BED51B1228C7C9C3003973B6 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				BED51B0B28C7C539003973B6 /* NetworkLayer */,
+				BED51B1128C7C9B0003973B6 /* Models */,
 				BED51AF728C7C3A1003973B6 /* AppDelegate.swift */,
 				BED51AF928C7C3A1003973B6 /* SceneDelegate.swift */,
 				BED51AFB28C7C3A1003973B6 /* ViewController.swift */,
@@ -84,6 +87,14 @@
 				BED51B0F28C7C826003973B6 /* RequestError.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		BED51B1128C7C9B0003973B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BED51B1228C7C9C3003973B6 /* Post.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 				BED51AFC28C7C3A1003973B6 /* ViewController.swift in Sources */,
 				BED51B1028C7C826003973B6 /* RequestError.swift in Sources */,
 				BED51AF828C7C3A1003973B6 /* AppDelegate.swift in Sources */,
+				BED51B1328C7C9C3003973B6 /* Post.swift in Sources */,
 				BED51B0E28C7C553003973B6 /* Endpoint.swift in Sources */,
 				BED51AFA28C7C3A1003973B6 /* SceneDelegate.swift in Sources */,
 			);
